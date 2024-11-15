@@ -144,6 +144,8 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 <!-- Having credits is optional but it's good practice to give credits to other developers for using their code/product/or anything else that should be credited to them. -->
 
+- Big thanks to _The Git Guild_ on the idea of setting up this Read me. <br /> _Socials:_ **[Youtube](https://www.youtube.com/watch?v=a8CwpGARAsQ)**
+
 ## Stretch Goals
 
 | By who?     | _On what exactly_?                                                    | _Where_?                   |
