@@ -161,6 +161,10 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 | `Jessica:` | **Back** _&_ **Front** - End |
 | `Pedro:`   | CSS _&_ **Front** - End      |
 
+## Our Project Backlog
+
+### [ [▶](https://github.com/users/jharreldesign/projects/1) ] Kanban/Back Logs
+
 ## Credits
 
 ##### [📚](#table-of-contents)
