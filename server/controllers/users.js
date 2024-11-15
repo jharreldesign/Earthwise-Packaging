@@ -1,24 +1,22 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
-const User = require('../models/user');
 const jwt = require('jsonwebtoken');
-
+const User = require('../models/user');
+const verifyToken = require('../middleware/verify-token'); // Ensure this middleware verifies JWTs
 
 const SALT_LENGTH = 12;
 
+// Signup route (Create user)
 router.post('/signup', async (req, res) => {
     try {
-        // Check if the username is already taken
         const userInDatabase = await User.findOne({ username: req.body.username });
         if (userInDatabase) {
-            return res.json({error: 'Username already taken.'});
+            return res.status(409).json({ error: 'Username already taken.' });
         }
-        // Create a new user with hashed password
-        const user = await User.create({
-            username: req.body.username,
-            hashedPassword: bcrypt.hashSync(req.body.password, SALT_LENGTH)
-        })
+        const hashedPassword = bcrypt.hashSync(req.body.password, SALT_LENGTH);
+        const user = await User.create({ username: req.body.username, hashedPassword });
+        
         const token = jwt.sign({ username: user.username, _id: user._id }, process.env.JWT_SECRET);
         res.status(201).json({ user, token });
     } catch (error) {
@@ -26,6 +24,7 @@ router.post('/signup', async (req, res) => {
     }
 });
 
+// Signin route (Authenticate user)
 router.post('/signin', async (req, res) => {
     try {
         const user = await User.findOne({ username: req.body.username });
@@ -37,6 +36,54 @@ router.post('/signin', async (req, res) => {
         }
     } catch (error) {
         res.status(400).json({ error: error.message });
+    }
+});
+
+// Get all users (Read)
+router.get('/', verifyToken, async (req, res) => {
+    try {
+        const users = await User.find({}, '-hashedPassword'); // Exclude hashedPassword
+        res.json(users);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Get a single user by ID (Read)
+router.get('/:id', verifyToken, async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id, '-hashedPassword'); // Exclude hashedPassword
+        if (!user) return res.status(404).json({ error: 'User not found.' });
+        res.json(user);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// Update a user by ID (Update)
+router.put('/:id', verifyToken, async (req, res) => {
+    try {
+        const updates = req.body;
+        if (updates.password) {
+            updates.hashedPassword = bcrypt.hashSync(updates.password, SALT_LENGTH);
+            delete updates.password; // Remove password field from updates
+        }
+        const user = await User.findByIdAndUpdate(req.params.id, updates, { new: true, runValidators: true });
+        if (!user) return res.status(404).json({ error: 'User not found.' });
+        res.json(user);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
+
+// Delete a user by ID (Delete)
+router.delete('/:id', verifyToken, async (req, res) => {
+    try {
+        const user = await User.findByIdAndDelete(req.params.id);
+        if (!user) return res.status(404).json({ error: 'User not found.' });
+        res.json({ message: 'User deleted successfully', user });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
     }
 });
 
