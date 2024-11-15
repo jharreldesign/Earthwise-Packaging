@@ -13,6 +13,17 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 <!-- We give a small & short introduction for what our site provides/does -->
 
+- **_[Tech-Stack](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#tech-stack)_**
+- **_[Download-&-Run](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#how-to-download--run-the-project)_**
+- **_[Features](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#features)_**
+  - **_[End-Point-Charts](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#endpoints-chart)_**
+  - **_[Portals](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#portals)_**
+  - **_[Models](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#models)_**
+  - **_[Product-Ideas](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#items-listed-for-now-idea)_**
+- **_[Developers](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#who-created-this-project)_**
+- **_[Credits](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#credits)_**
+- **_[Stretch-Goals](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#stretch-goals)_**
+
 ## Tech Stack
 
 | Section       | Technology Used           |
