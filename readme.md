@@ -171,20 +171,6 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 - Better ToC (Table of Contents) format, but also no page lag. Thanks to the Stack Overflow forums! <br /> **[Stack Overflow](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents)**
 
-## Project Planning
-
-##### [📚](#table-of-contents)
-
-### ERD Plan
-
-<img src="../Earthwise-Packaging/assets/ERD/Earthwise.png" width="600px" height="500px" alt="ERD-made-by-Jessica" />
-
----
-
-### Site Wireframe
-
-<img src="../Earthwise-Packaging/assets/wireframe/Site-Wireframe.png" width="600px" height="600px" alt="Website-wireframe" />
-
 ## Stretch Goals
 
 ##### [📚](#table-of-contents)
