@@ -9,22 +9,26 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 <br />Think of us as an eco-supplier, making it easy for businesses to browse, buy, and breathe easier knowing they’re reducing waste.
 <br />Together, we’re packing up pollution and unboxing a greener future one compostable fork at a time!
 
-## Table of Contexts
+## Table of Contents
 
 <!-- We give a small & short introduction for what our site provides/does -->
 
-- **_[Tech-Stack](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#tech-stack)_**
-- **_[Download-&-Run](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#how-to-download--run-the-project)_**
-- **_[Features](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#features)_**
-  - **_[End-Point-Charts](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#endpoints-chart)_**
-  - **_[Portals](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#portals)_**
-  - **_[Models](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#models)_**
-  - **_[Product-Ideas](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#items-listed-for-now-idea)_**
-- **_[Developers](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#who-created-this-project)_**
-- **_[Credits](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#credits)_**
-- **_[Stretch-Goals](https://github.com/jharreldesign/Earthwise-Packaging/tree/PedroCr05#stretch-goals)_**
+### 📚 | The books is a clickable emoji, so you can redirect back to this list!
+
+- **_[Tech Stack](#tech-stack)_**
+- **_[How to Download & Run](#how-to-download--run-the-project)_**
+- **_[Features](#features)_**
+  - **_[End-Point Charts](#endpoints-chart)_**
+  - **_[Portals](#portals)_**
+  - **_[Models](#models)_**
+  - **_[Product Ideas](#items-listed-for-now-idea)_**
+- **_[Developers](#who-created-this-project)_**
+- **_[Credits](#credits)_**
+- **_[Stretch Goals](#stretch-goals)_**
 
 ## Tech Stack
+
+##### [📚](#table-of-contents)
 
 | Section       | Technology Used           |
 | ------------- | ------------------------- |
@@ -33,6 +37,8 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 | **Frontend:** | Axios, CSS, _&_ React     |
 
 ## How to Download & Run the Project
+
+##### [📚](#table-of-contents)
 
 <!-- Here we just show how any other developers want to download this project -->
 
@@ -56,9 +62,13 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 ## Features
 
+##### [📚](#table-of-contents)
+
 <!-- Here we will list all features that the site will provide so like that we can list off the: AAUS (As a user stories)  -->
 
 ### Endpoints Chart
+
+##### [📚](#table-of-contents)
 
 #### Endpoint for Users/Customers
 
@@ -82,10 +92,14 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 ### Portals
 
+##### [📚](#table-of-contents)
+
 - Customer Only Portal/Access -> MVP
 - Admin Only Portal/Access -> Post MVP
 
 ### Models
+
+##### [📚](#table-of-contents)
 
 ---
 
@@ -120,6 +134,8 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 ### Items listed for now (_idea_)
 
+##### [📚](#table-of-contents)
+
 | Category                  | Products                                                                |
 | ------------------------- | ----------------------------------------------------------------------- |
 | `Food & Eating Supplies:` | Plates, Straws, Utensils, & Cups (hot, cold, & multiple sizes)          |
@@ -134,6 +150,8 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 ## Who created this Project?
 
+##### [📚](#table-of-contents)
+
 | Developers | _What Part?_                 |
 | ---------- | ---------------------------- |
 | `Jason:`   | **Back** _&_ **Front** - End |
@@ -142,11 +160,17 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 
 ## Credits
 
+##### [📚](#table-of-contents)
+
 <!-- Having credits is optional but it's good practice to give credits to other developers for using their code/product/or anything else that should be credited to them. -->
 
 - Big thanks to _The Git Guild_ on the idea of setting up this Read me. <br /> _Socials:_ **[Youtube](https://www.youtube.com/watch?v=a8CwpGARAsQ)**
 
+- Better ToC (Table of Contents) format, but also no page lag. Thanks to the Stack Overflow forums! <br /> **[Stack Overflow](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents)**
+
 ## Stretch Goals
+
+##### [📚](#table-of-contents)
 
 | By who?     | _On what exactly_?                                                    | _Where_?                   |
 | ----------- | --------------------------------------------------------------------- | -------------------------- |
