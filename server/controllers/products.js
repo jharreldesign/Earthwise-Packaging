@@ -14,8 +14,10 @@ router.post('/', async (req, res) => {
             productImage,
             productQuantity,
             productSku,
-            manufacturerSku
+            manufacturerSku,
+            productReview
         } = req.body;
+        
         const newProduct = new Product({
             productName,
             productDescription,
@@ -24,6 +26,7 @@ router.post('/', async (req, res) => {
             productQuantity,
             productSku,
             manufacturerSku,
+            productReview
         });
         await newProduct.save();
         res.status(201).send(newProduct);

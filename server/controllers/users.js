@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
-const verifyToken = require('../middleware/verify-token'); // Ensure this middleware verifies JWTs
+const verifyToken = require('../middleware/verify-token'); 
 
 const SALT_LENGTH = 12;
 
@@ -42,7 +42,7 @@ router.post('/signin', async (req, res) => {
 // Get all users (Read)
 router.get('/', verifyToken, async (req, res) => {
     try {
-        const users = await User.find({}, '-hashedPassword'); // Exclude hashedPassword
+        const users = await User.find({}, '-hashedPassword');
         res.json(users);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -52,7 +52,7 @@ router.get('/', verifyToken, async (req, res) => {
 // Get a single user by ID (Read)
 router.get('/:id', verifyToken, async (req, res) => {
     try {
-        const user = await User.findById(req.params.id, '-hashedPassword'); // Exclude hashedPassword
+        const user = await User.findById(req.params.id, '-hashedPassword'); 
         if (!user) return res.status(404).json({ error: 'User not found.' });
         res.json(user);
     } catch (error) {
@@ -66,7 +66,7 @@ router.put('/:id', verifyToken, async (req, res) => {
         const updates = req.body;
         if (updates.password) {
             updates.hashedPassword = bcrypt.hashSync(updates.password, SALT_LENGTH);
-            delete updates.password; // Remove password field from updates
+            delete updates.password;
         }
         const user = await User.findByIdAndUpdate(req.params.id, updates, { new: true, runValidators: true });
         if (!user) return res.status(404).json({ error: 'User not found.' });

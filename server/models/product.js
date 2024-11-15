@@ -29,6 +29,13 @@ const productSchema = new mongoose.Schema(
     manufacturerSku: {
         type: String,
         required: true,
+    },
+    productCategoy: {
+      type: String,
+      required: true,
+    },
+    productReview: {
+      type: [String],
     }
   },
   { timestamps: true }
