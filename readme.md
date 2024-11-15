@@ -24,6 +24,9 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
   - **_[Product Ideas](#items-listed-for-now-idea)_**
 - **_[Developers](#who-created-this-project)_**
 - **_[Credits](#credits)_**
+- **_[Project Planning](#project-planning)_**
+  - **_[ERD](#erd-plan)_**
+  - **_[Wireframe](#site-wireframe)_**
 - **_[Stretch Goals](#stretch-goals)_**
 
 ## Tech Stack
@@ -167,6 +170,20 @@ Welcome to **Earthwise Packaging**, where we’re on a mission to help the food 
 - Big thanks to _The Git Guild_ on the idea of setting up this Read me. <br /> _Socials:_ **[Youtube](https://www.youtube.com/watch?v=a8CwpGARAsQ)**
 
 - Better ToC (Table of Contents) format, but also no page lag. Thanks to the Stack Overflow forums! <br /> **[Stack Overflow](https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents)**
+
+## Project Planning
+
+##### [📚](#table-of-contents)
+
+### ERD Plan
+
+<img src="../Earthwise-Packaging/assets/ERD/Earthwise.png" width="600px" height="500px" alt="ERD-made-by-Jessica" />
+
+---
+
+### Site Wireframe
+
+<img src="../Earthwise-Packaging/assets/wireframe/Site-Wireframe.png" width="600px" height="600px" alt="Website-wireframe" />
 
 ## Stretch Goals
 
